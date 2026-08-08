@@ -1,0 +1,7 @@
+path: ./Dataset
+train: images/train
+val: images/validation
+test: images/test
+
+nc: 6
+names: ['cr', 'in', 'pa', 'ps', 'rs', 'sc']   
