@@ -1,7 +1,6 @@
 path: ./Dataset
 train: images/train
 val: images/validation
-test: images/test
 
 nc: 6
-names: ['cr', 'in', 'pa', 'ps', 'rs', 'sc']   
+names: ['crazing', 'inclusion', 'patches', 'pitted_surface', 'rolled-in_scales', 'scractches']   
