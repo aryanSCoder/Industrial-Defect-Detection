@@ -1,94 +1,74 @@
-\# NEU Metal Surface Defects Dataset - Week 1
+# NEU Metal Surface Defects Dataset - Week 1
 
+## Dataset Information
+- **Source**: NEU Metal Surface Defects Database
+- **Date Organized**: August 15, 2026
+- **Organized by**: Chaitanya (Member 1)
+- **Location**: Stored locally (not in GitHub)
 
+## Actual Dataset Statistics
+- **Total Images**: 1800
+- **Training Images**: 1440 (80%)
+- **Validation Images**: 360 (20%)
+- **Image Format**: .jpg, .png
+- **Annotation Format**: .txt (YOLO format with normalized bounding boxes)
 
-\## Dataset Information
+## Local Folder Structure
 
-\- \*\*Source\*\*: NEU Metal Surface Defects Database
+## Defect Classes (6 types)
+1. **Crazing** - Surface cracks
+2. **Inclusion** - Foreign material embedded
+3. **Patches** - Discolored areas
+4. **Pitted Surface** - Small holes/depressions
+5. **Rolled-in Scale** - Oxide scale
+6. **Scratches** - Linear marks
 
-\- \*\*Date Organized\*\*: August 15, 2026
+## Data Verification Checklist ✅
+- [x] Downloaded from NEU Metal Surface Defects Database
+- [x] Total image count verified: 1800 images
+- [x] Training/Validation split confirmed: 80/20
+- [x] Image-label matching verified: All images have corresponding annotations
+- [x] All 6 defect classes present in dataset
+- [x] YOLO format annotations verified
+- [x] No missing or corrupted files detected
 
-\- \*\*Organized by\*\*: Chaitanya (Member 1)
+## Dataset Split Details
+- **Training Set**: 1440 images (80%) + 1440 annotations
+- **Validation Set**: 360 images (20%) + 360 annotations
+- **Split Ratio**: 80% training, 20% validation
+- **Total Annotations**: 1800 (one per image)
 
-\- \*\*Location\*\*: Stored locally (not in GitHub)
+## File Matching Status
+✅ **VERIFIED** - Every image has a matching annotation file
+- Training set: 1440/1440 images matched with labels
+- Validation set: 360/360 images matched with labels
+- No orphan images or labels found
 
+## Storage Notes
+⚠️ **Large image files stored locally, NOT in GitHub**
+- Team members keep their own local copy
+- Only documentation is uploaded to GitHub
+- Dataset can be accessed from: `C:\Users\revat\Downloads\Neu zaalima dataset\NEU-DET`
 
+## YOLO Configuration
+```yaml
+path: C:\Users\revat\Downloads\Neu zaalima dataset\NEU-DET
+train: train/images
+val: validation/images
 
-\## Folder Structure (Local)
+nc: 6
+names: ['crazing', 'inclusion', 'patches', 'pitted_surface', 'rolled_in_scale', 'scratches']
+```
 
-
-
-\## Defect Classes (6 types)
-
-1\. \*\*Crazing\*\* - Surface cracks
-
-2\. \*\*Inclusion\*\* - Foreign material embedded
-
-3\. \*\*Patches\*\* - Discolored areas
-
-4\. \*\*Pitted Surface\*\* - Small holes/depressions
-
-5\. \*\*Rolled-in Scale\*\* - Oxide scale
-
-6\. \*\*Scratches\*\* - Linear marks
-
-
-
-\## Dataset Statistics
-
-\- \*\*Total Images\*\*: \[From your Colab output]
-
-\- \*\*Training Images\*\*: 80%
-
-\- \*\*Validation Images\*\*: 20%
-
-\- \*\*Image Format\*\*: .jpg, .png
-
-\- \*\*Annotation Format\*\*: .txt (YOLO format)
-
-
-
-\## File Matching
-
-\- Every image has corresponding .txt annotation
-
-\- All images verified and organized by defect type
-
-\- Ready for YOLOv8 training
-
-
-
-\## Storage Notes
-
-⚠️ \*\*Large image files stored locally, NOT in GitHub\*\*
-
-\- Team members keep own copy
-
-\- Only documentation uploaded to GitHub
-
-\- Download from: NEU Metal Surface Defects Database
-
-
-
-\## Status
-
-✅ Dataset downloaded and organized locally
-
+## Status
+✅ Dataset downloaded and organized
 ✅ Split into train/validation (80/20)
-
 ✅ All images matched with annotations
-
+✅ Image-label verification complete
 ✅ Ready for Week 2 training phase
 
-
-
-\## Week 2 Next Steps
-
-\- Member 1 (Chaitanya): Prepare training configuration
-
-\- Member 2 (Arun): Validate all annotations
-
-\- Member 3 (Musthafa): Finalize augmentation
-
-\- Member 4 (Nallapa): Document mAP metrics
-
+## Next Steps
+- Week 2: YOLOv8 training setup and model training
+- Member 2 (Arun): Complete annotation validation report
+- Member 3 (Musthafa): Finalize augmentation pipeline
+- Member 4 (Nallapa): Complete mAP evaluation documentation
