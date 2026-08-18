@@ -12,9 +12,8 @@
 - **Validation**: 360 images (20%) + 360 annotations
 - **Format**: YOLO (.txt files, normalized coordinates)
 
-## Local Folder Structure (Chaitanya's Computer)
-
-Local path: `C:\Users\revat\Downloads\Neu zaalima dataset\NEU-DET\`
+## Local Storage
+**Chaitanya's Computer**: `C:\Users\revat\Downloads\Neu zaalima dataset\NEU-DET\`
 
 
 ## Defect Classes (6 types)
