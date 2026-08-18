@@ -13,7 +13,10 @@
 - **Image Format**: .jpg, .png
 - **Annotation Format**: .txt (YOLO format with normalized bounding boxes)
 
-## Local Folder Structure
+## Local Folder Structure (Chaitanya's Computer)
+
+Local path: `C:\Users\revat\Downloads\Neu zaalima dataset\`
+
 
 ## Defect Classes (6 types)
 1. **Crazing** - Surface cracks
@@ -27,7 +30,7 @@
 - [x] Downloaded from NEU Metal Surface Defects Database
 - [x] Total image count verified: 1800 images
 - [x] Training/Validation split confirmed: 80/20
-- [x] Image-label matching verified: All images have corresponding annotations
+- [x] Image-annotation matching verified: All images have corresponding annotations
 - [x] All 6 defect classes present in dataset
 - [x] YOLO format annotations verified
 - [x] No missing or corrupted files detected
@@ -36,19 +39,19 @@
 - **Training Set**: 1440 images (80%) + 1440 annotations
 - **Validation Set**: 360 images (20%) + 360 annotations
 - **Split Ratio**: 80% training, 20% validation
-- **Total Annotations**: 1800 (one per image)
+- **Total Annotations**: 1800 (one annotation per image - verified)
 
-## File Matching Status
+## File Matching Verification
 ✅ **VERIFIED** - Every image has a matching annotation file
-- Training set: 1440/1440 images matched with labels
-- Validation set: 360/360 images matched with labels
+- Training set: 1440/1440 images matched with labels (100%)
+- Validation set: 360/360 images matched with labels (100%)
 - No orphan images or labels found
 
 ## Storage Notes
 ⚠️ **Large image files stored locally, NOT in GitHub**
 - Team members keep their own local copy
 - Only documentation is uploaded to GitHub
-- Dataset can be accessed from: `C:\Users\revat\Downloads\Neu zaalima dataset\NEU-DET`
+- Dataset stored locally at: `C:\Users\revat\Downloads\Neu zaalima dataset\NEU-DET\`
 
 ## YOLO Configuration
 ```yaml
@@ -63,7 +66,7 @@ names: ['crazing', 'inclusion', 'patches', 'pitted_surface', 'rolled_in_scale', 
 ## Status
 ✅ Dataset downloaded and organized
 ✅ Split into train/validation (80/20)
-✅ All images matched with annotations
+✅ All images matched with annotations (verified)
 ✅ Image-label verification complete
 ✅ Ready for Week 2 training phase
 
